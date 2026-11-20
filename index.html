@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="自動車修理事例、整備記録サイト">
+    <title>車直し日記</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>車直し日記</h1>
+        <nav>
+            <a href="index.html">ホーム</a>
+            <a href="cases.html">修理事例</a>
+            <a href="codes.html">故障コード</a>
+            <a href="about.html">このサイトについて</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>直した車の記録</h2>
+            <p>故障診断・修理方法</p>
+
+            <form action="cases.html" method="get">
+                <input
+                   type="cearch"
+                   name="q"
+                   placeholder="車種・故障コードで検索">
+                   
+                   <button type="submit">検索</button>
+            </form>
+        </section>
+        <section>
+            <h2>新着の修理事例</h2>
+
+            <article class="case-card">
+                <p class="tag">エンジン・故障診断</p>
+                <h3>
+                    <a href="case-p1402.html">エクストレイルP1402 診断記録</a>
+                </h3>
+                <p>故障コードと実際の点検・修理結果</p>
+            </article>
+
+            <article class="case-card" data-search="サンバー TT2 4WD ソレノイド">
+                <p class="tag">駆動系・4WD</p>
+                <h3>
+                    <a href="case-tt2-4wd.html">サンバー TT2 4WD切り替え不良</a>
+                </h3>
+                <p> 4WD切り替えの遅れと衝撃。
+                    ソレノイド交換で改善した事例。</p>
+            </article>
+
+            <article class="case-card" data-search="クリッパー AT シフトロック シフトノブ 摩耗">
+                <p class="tag">駆動系・ATシフト機構</p>
+                <h3>
+                    <a href="case-clipper-shift.html">クリッパー ATシフトロック解除不良 </a>
+                </h3>
+                <p> シフトノブ内部の摩耗による操作不良。
+                    芯を肉盛り補修して正常作動を確認した事例。</p>
+            </article>
+
+            <article class="case-card" data-search="LA110S ムーヴ アッパーマウント">
+                <p class="tag">足回り・異音</p>
+                <h3>
+                    <a href="case-la110s-upper-mount.html">LA110S ムーヴ｜フロント異音の修理</a>
+                </h3>
+                <p>社外アッパーマウント交換後に発生した異音事例。</p>
+            </article>
+
+
+            <article class="case-card">
+                <p class="tag">エンジン修理</p>
+                <h3>
+                    <a href="case-hh6-coolant.html">
+                        HH6 アクティバン｜冷却水が減る症状
+                    </a>
+                </h3>
+                <p>
+                    サブタンクの冷却水が黒く変色。
+                    ヘッドガスケット交換を行った修理事例。
+                </p>
+            </article>
+
+
+            <article class="case-card">
+                <p class="tag">新着・駆動系</p>
+                <h3>
+                    <a href="case-ha4-propeller.html">
+                        HA4 アクティ｜プロペラシャフトのブーツ破れ
+                    </a>
+                </h3>
+                <p>
+                    ブーツ破損でグリスが飛散。
+                    補修部品が生産終了していたためASSY交換した事例。
+                </p>
+            </article>
+
+
+            <article class="case-card">
+                <p class="tag">電装系・メーター</p>
+                <h3>
+                    <a href="case-elf-meter-lamp.html">
+                        H5年式エルフ|メーターランプ不点灯の修理
+                    </a>
+                </h3>
+                <p>
+                    不点灯になったメーターランプを交換。すべて点灯するようになった事例。
+                </p>
+            </article>
+
+
+
+
+
+        </section>    
+    </main>
+
+    <footer>
+        <p>&copy; 車直し日記</p>
+    </footer>
+<script src="search.js"></script>
+</body>
+</html>

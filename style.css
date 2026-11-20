@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #222;
+    background: #f4f6f8;
+    line-height: 1.8;
+}
+header{
+    padding: 20px;
+    background: #172b3a;
+    color: white;
+}
+header h1{
+    margin: 0 0 10px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+.hero,
+.case-card{
+    padding: 12px;
+    margin-bottom: 24px;
+    background: white;
+    border-radius: 10px;
+}
+input,
+button{
+    padding: 12px;
+    font-size: 16px;
+}
+input{
+    width: min(100%, 400px);
+}
+button{
+    cursor: pointer;
+}
+a{
+    color: #17649a;
+}
+.tag{
+    color: #17649a;
+    font-size: 14px;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+}
+article img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+.code-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}
+ .photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin: 0;
+  background: #eee;
+  border-radius: 8px;
+} 
+ .case-thumb {
+  width: 180px;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  background: #eee;
+} 
